@@ -40,8 +40,8 @@
 #define STEEMIT_OWNER_AUTH_HISTORY_TRACKING_START_BLOCK_NUM 1
 #else // IS LIVE STEEM NETWORK
 
-#define STEEMIT_INIT_PUBLIC_KEY_STR             "VOX8hTtrju54bpqTrhDWcTmEiLnSZ2Eb2E9xQW3keTtHajnm3May6"
-#define STEEMIT_CHAIN_ID                        (fc::sha256::hash("voxxx"))
+#define STEEMIT_INIT_PUBLIC_KEY_STR             "VOX4vHvC6R8evb4tjDac4pR8M5VwsREFWJL2kpLnc5g5Zaogb92ff"
+#define STEEMIT_CHAIN_ID                        (fc::sha256::hash("voxxxx"))
 
 #define VESTS_SYMBOL  (uint64_t(6) | (uint64_t('V') << 8) | (uint64_t('E') << 16) | (uint64_t('S') << 24) | (uint64_t('T') << 32) | (uint64_t('S') << 40)) ///< VESTS with 6 digits of precision
 #define STEEM_SYMBOL  (uint64_t(3) | (uint64_t('V') << 8) | (uint64_t('O') << 16) | (uint64_t('X') << 24) ) ///< STEEM with 3 digits of precision
@@ -49,15 +49,15 @@
 #define STMD_SYMBOL   (uint64_t(3) | (uint64_t('G') << 8) | (uint64_t('O') << 16) | (uint64_t('L') << 24) | (uint64_t('D') << 32) | (uint64_t('D') << 40) ) ///< STEEM Dollars with 3 digits of precision
 
 #define STEEMIT_SYMBOL                          "VOX"
-#define STEEMIT_ADDRESS_PREFIX                  "VOX"
+#define STEEMIT_ADDRESS_PREFIX                  "VOXX"
 
 #define STEEMIT_GENESIS_TIME                    (fc::time_point_sec(1458835200))
 #define STEEMIT_MINING_TIME                     (fc::time_point_sec(1458838800))
-#define STEEMIT_BLOCK_STOP_PRINT_SBD_1ST 			 2881000
+#define STEEMIT_BLOCK_STOP_PRINT_SBD_1ST 			 5270400
 
 #define STEEMIT_CASHOUT_WINDOW_SECONDS_PRE_HF12 (60*60*24)    /// 1 day
 #define STEEMIT_CASHOUT_WINDOW_SECONDS_PRE_HF17 (60*60*12)    /// 12 hours
-#define STEEMIT_CASHOUT_WINDOW_SECONDS          (60*60*48)  ///must be 60*60*48 2 days
+#define STEEMIT_CASHOUT_WINDOW_SECONDS          (60*20)  ///must be 60*60*48 2 days
 #define STEEMIT_SECOND_CASHOUT_WINDOW           (0) /// 30 days
 #define STEEMIT_MAX_CASHOUT_WINDOW_SECONDS      (60*60) /// 2 weeks
 #define STEEMIT_VOTE_CHANGE_LOCKOUT_PERIOD      (60*60*2)     /// 2 hours
@@ -84,7 +84,7 @@
 #define STEEMIT_FUND_3							"fund.common"
 #define STEEMIT_AUCTION                         "auction"
 #define STEEMIT_INIT_MINER_NAME                 "initminer"
-#define STEEMIT_NUM_INIT_MINERS                 21
+#define STEEMIT_NUM_INIT_MINERS                 28
 #define STEEMIT_INIT_TIME                       (fc::time_point_sec());
 
 #define STEEMIT_MAX_WITNESSES                   21
@@ -136,12 +136,12 @@
 #define STEEMIT_MAX_RATION_DECAY_RATE           (1000000)
 #define STEEMIT_FREE_TRANSACTIONS_WITH_NEW_ACCOUNT 100
 
-#define STEEMIT_BANDWIDTH_AVERAGE_WINDOW_SECONDS (60*60*24*1) ///< 1 week
+#define STEEMIT_BANDWIDTH_AVERAGE_WINDOW_SECONDS (60*60*24*7) ///< 1 week
 #define STEEMIT_BANDWIDTH_PRECISION             (uint64_t(1000000)) ///< 1 million
 #define STEEMIT_MAX_COMMENT_DEPTH_PRE_HF17      6
 #define STEEMIT_MAX_COMMENT_DEPTH               0xffff // 64k
 #define STEEMIT_SOFT_MAX_COMMENT_DEPTH          0xff // 255
-#define STEEMIT_VEST_FACTOR						uint64_t(1000000)		
+#define STEEMIT_VEST_FACTOR						uint64_t(1)		
 
 #define STEEMIT_MAX_RESERVE_RATIO               (20000)
 
