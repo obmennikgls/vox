@@ -1979,7 +1979,7 @@ uint16_t database::get_curation_rewards_percent( const comment_object& c ) const
    if( has_hardfork( STEEMIT_HARDFORK_0_17__774 ) )
       return get_reward_fund( c ).percent_curation_rewards;
    else if( has_hardfork( STEEMIT_HARDFORK_0_8__116 ) )
-      return STEEMIT_1_PERCENT * 25;
+      return STEEMIT_1_PERCENT * 50;
    else
       return STEEMIT_1_PERCENT * 50;
 }
@@ -3772,7 +3772,7 @@ void database::apply_hardfork( uint32_t hardfork )
                rfo.name = STEEMIT_POST_REWARD_FUND_NAME;
                rfo.last_update = head_block_time();
                rfo.content_constant = STEEMIT_CONTENT_CONSTANT_HF0;
-               rfo.percent_curation_rewards = STEEMIT_1_PERCENT * 25;
+               rfo.percent_curation_rewards = STEEMIT_1_PERCENT * 50;
                rfo.percent_content_rewards = STEEMIT_100_PERCENT;
                rfo.reward_balance = gpo.total_reward_fund_steem;
 #ifndef IS_TEST_NET

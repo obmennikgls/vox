@@ -40,16 +40,16 @@
 #define STEEMIT_OWNER_AUTH_HISTORY_TRACKING_START_BLOCK_NUM 1
 #else // IS LIVE STEEM NETWORK
 
-#define STEEMIT_INIT_PUBLIC_KEY_STR             "VOX4vHvC6R8evb4tjDac4pR8M5VwsREFWJL2kpLnc5g5Zaogb92ff"
-#define STEEMIT_CHAIN_ID                        (fc::sha256::hash("voxxxx"))
+#define STEEMIT_INIT_PUBLIC_KEY_STR             "MASS4vHvC6R8evb4tjDac4pR8M5VwsREFWJL2kpLnc5g5Zaogb92ff"
+#define STEEMIT_CHAIN_ID                        (fc::sha256::hash("mass"))
 
 #define VESTS_SYMBOL  (uint64_t(6) | (uint64_t('V') << 8) | (uint64_t('E') << 16) | (uint64_t('S') << 24) | (uint64_t('T') << 32) | (uint64_t('S') << 40)) ///< VESTS with 6 digits of precision
-#define STEEM_SYMBOL  (uint64_t(3) | (uint64_t('V') << 8) | (uint64_t('O') << 16) | (uint64_t('X') << 24) ) ///< STEEM with 3 digits of precision
-#define SBD_SYMBOL    (uint64_t(3) | (uint64_t('G') << 8) | (uint64_t('O') << 16) | (uint64_t('L') << 24) | (uint64_t('D') << 32) ) ///< STEEM Backed Dollars with 3 digits of precision
-#define STMD_SYMBOL   (uint64_t(3) | (uint64_t('G') << 8) | (uint64_t('O') << 16) | (uint64_t('L') << 24) | (uint64_t('D') << 32) | (uint64_t('D') << 40) ) ///< STEEM Dollars with 3 digits of precision
+#define STEEM_SYMBOL  (uint64_t(3) | (uint64_t('S') << 8) ) ///< STEEM with 3 digits of precision
+#define SBD_SYMBOL    (uint64_t(3) | (uint64_t('L') << 8) ) ///< STEEM Backed Dollars with 3 digits of precision
+#define STMD_SYMBOL   (uint64_t(3) | (uint64_t('L') << 8) ) ///< STEEM Dollars with 3 digits of precision
 
-#define STEEMIT_SYMBOL                          "VOX"
-#define STEEMIT_ADDRESS_PREFIX                  "VOXX"
+#define STEEMIT_SYMBOL                          "S"
+#define STEEMIT_ADDRESS_PREFIX                  "MASS"
 
 #define STEEMIT_GENESIS_TIME                    (fc::time_point_sec(1458835200))
 #define STEEMIT_MINING_TIME                     (fc::time_point_sec(1458838800))
@@ -141,7 +141,6 @@
 #define STEEMIT_MAX_COMMENT_DEPTH_PRE_HF17      6
 #define STEEMIT_MAX_COMMENT_DEPTH               0xffff // 64k
 #define STEEMIT_SOFT_MAX_COMMENT_DEPTH          0xff // 255
-#define STEEMIT_VEST_FACTOR						uint64_t(1)		
 
 #define STEEMIT_MAX_RESERVE_RATIO               (20000)
 
